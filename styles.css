@@ -12,25 +12,25 @@ body {
 
 
 header {
-    padding: 20px;
+    padding: 1rem;
     text-align: center;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 2rem;
     background: darkorange;
     font-variant: small-caps;
 }
 header img {
-    height: 44px;
+    height: 2.6rem;
 }
 
 
 .destaque {
-    padding: 50px;
+    padding: 3rem;
     background-image: linear-gradient(darkorange, black);
 }
 .destaque-botao {
     background: #1d1d1d;
-    padding: 20px;
+    padding: 1.25rem;
     border-radius: 20px;
     display: flex;
     cursor: pointer;
@@ -43,11 +43,11 @@ header img {
   }
 }
 .destaque-botao:hover {
-    box-shadow: 0 0 20px black;
+    box-shadow: 0 0 1.25rem black;
     opacity: 0.75;
 }
 .destaque-textos {
-    margin-left: 20px;
+    margin-left: 1.25rem;
 }
 .destaque-textos h1 {
     font-weight: normal;
@@ -58,22 +58,23 @@ header img {
 
 
 .categoria {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
 }
 .categoria h1 {
-    padding-left: 20px;
+    padding-left: 1.25rem;
 }
 
 
 #carrossel {
     display: flex;
-    gap: 10px;
+    gap: 0.625rem;
     overflow-x: auto;
     scrollbar-width: none;
 }
 #carrossel img {
-    height: 200px
+    height: 12.5rem;
+    border-radius: 10px;
 }
 
 
@@ -84,16 +85,13 @@ header img {
     padding: 10px;
     cursor: pointer;
 }
-.video img {
-    border-radius: 10px;
-}
 .video:hover {
     opacity: 0.25;
 }
 .video-texto {
     justify-content: space-between;
     display: flex;
-    margin-top: 10px;
+    margin-top: 0.625rem;
     align-items: center;
 
 }
@@ -106,22 +104,23 @@ header img {
 
 .rodape{
     justify-content: center;
-    padding: 20px;
+    padding: 1.25rem;
 }
 .instagram {
     background: none;
-    padding: 10px;
+    padding: 0.625rem;
     border-color: rgb(255, 16, 93);
     border-radius: 5px;
     cursor: pointer;
-    gap: 5px;
-    font-size: 15px;
+    font-size: 1rem;
     color: darkorange;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+}
+.instagram img {
+    padding-right: 0.375rem;
 }
 .instagram:hover {
-    box-shadow: 0 0 8px white;
+    box-shadow: 0 0 0.5rem white;
 }
