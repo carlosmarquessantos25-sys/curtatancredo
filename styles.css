@@ -1,0 +1,127 @@
+* {
+    font-family: "Work Sans", sans-serif;
+    color: white;
+}
+
+
+body {
+    background: black;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+header {
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    background: darkorange;
+    font-variant: small-caps;
+}
+header img {
+    height: 44px;
+}
+
+
+.destaque {
+    padding: 50px;
+    background-image: linear-gradient(darkorange, black);
+}
+.destaque-botao {
+    background: #1d1d1d;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    cursor: pointer;
+    justify-content: space-around;
+    background-clip: padding-box;
+}
+@media screen and (max-width: 768px) {
+  .destaque-botao{
+    flex-direction: column;
+  }
+}
+.destaque-botao:hover {
+    box-shadow: 0 0 20px black;
+    opacity: 0.75;
+}
+.destaque-textos {
+    margin-left: 20px;
+}
+.destaque-textos h1 {
+    font-weight: normal;
+}
+.destaque-botao img {
+    border-radius: 20px;
+}
+
+
+.categoria {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.categoria h1 {
+    padding-left: 20px;
+}
+
+
+#carrossel {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+#carrossel img {
+    height: 200px
+}
+
+
+.video {
+    text-align: center;
+    border-radius: 10px;
+    background: #1d1d1d;
+    padding: 10px;
+    cursor: pointer;
+}
+.video img {
+    border-radius: 10px;
+}
+.video:hover {
+    opacity: 0.25;
+}
+.video-texto {
+    justify-content: space-between;
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+
+}
+.tempo {
+    background: #000000a5;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+
+.rodape{
+    justify-content: center;
+    padding: 20px;
+}
+.instagram {
+    background: none;
+    padding: 10px;
+    border-color: rgb(255, 16, 93);
+    border-radius: 5px;
+    cursor: pointer;
+    gap: 5px;
+    font-size: 15px;
+    color: darkorange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.instagram:hover {
+    box-shadow: 0 0 8px white;
+}
