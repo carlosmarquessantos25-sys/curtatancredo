@@ -10,7 +10,7 @@ body {
     margin: 0px;
 }
 
-
+/* header */
 header {
     padding: 1rem;
     text-align: center;
@@ -23,7 +23,7 @@ header img {
     height: 2.6rem;
 }
 
-
+/* destaque*/
 .destaque {
     padding: 3rem;
     background-image: linear-gradient(darkorange, black);
@@ -36,11 +36,6 @@ header img {
     cursor: pointer;
     justify-content: space-around;
     background-clip: padding-box;
-}
-@media screen and (max-width: 768px) {
-  .destaque-botao{
-    flex-direction: column;
-  }
 }
 .destaque-botao:hover {
     box-shadow: 0 0 1.25rem black;
@@ -56,7 +51,7 @@ header img {
     border-radius: 20px;
 }
 
-
+/* categoria */
 .categoria {
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
@@ -65,7 +60,7 @@ header img {
     padding-left: 1.25rem;
 }
 
-
+/* carrossel */
 #carrossel {
     display: flex;
     gap: 0.625rem;
@@ -77,7 +72,7 @@ header img {
     border-radius: 10px;
 }
 
-
+/* video */
 .video {
     text-align: center;
     border-radius: 10px;
@@ -101,7 +96,7 @@ header img {
     border-radius: 5px;
 }
 
-
+/* rodape */
 .rodape{
     justify-content: center;
     padding: 1.25rem;
@@ -111,6 +106,7 @@ header img {
     padding: 0.625rem;
     border-color: rgb(255, 16, 93);
     border-radius: 5px;
+    border-width: 2px;
     cursor: pointer;
     font-size: 1rem;
     color: darkorange;
@@ -120,7 +116,52 @@ header img {
 }
 .instagram img {
     padding-right: 0.375rem;
+    height: 1.25rem;
 }
 .instagram:hover {
     box-shadow: 0 0 0.5rem white;
+}
+
+/* MODIFICACOES PARA MOBILE*/
+@media screen and (max-width: 1081px) {
+    header {
+        font-size: 3rem;
+    }
+    
+    .destaque-botao {
+        flex-direction: column;
+        background-clip: padding-box;
+    }
+    .destaque-textos h1 {
+        font-size: 60px;
+    }
+    .destaque-textos p {
+        font-size: 40px;
+    }
+    
+    .categoria h1 {
+        font-size: 60px;
+    }
+    #carrossel img {
+        height: 25rem;
+    }
+    #carrossel span {
+        font-size: 40px;
+    }
+
+    .video {
+        padding: 1.5rem;
+    }
+
+    .rodape p {
+        font-size: 40px;
+    }
+
+    .instagram {
+        font-size: 3rem;
+        border-width: 7px;
+    }
+    .instagram img {
+        height: 4rem;
+    }
 }
